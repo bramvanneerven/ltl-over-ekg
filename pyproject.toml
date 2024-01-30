@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "scriptie"
+version = "0.1.0"
+description = ""
+authors = ["Bram van Neerven <bram@sifters.nl>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+polars = "^0.20"
+xlsx2csv = "^0.8.1"
+neo4j = "^5.13.0"
+streamlit = "^1.29.0"
+plotly = "^5.18.0"
+streamlit-agraph = "^0.0.45"
+
+[tool.poetry.group.dev.dependencies]
+colorama = "^0.4.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
