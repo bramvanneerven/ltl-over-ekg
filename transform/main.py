@@ -296,6 +296,10 @@ def transform():
     df_payment_journal_entry_relations_performed = users.load_relations(
         df_payment_journal_entry_event_creations
     )
+    s.save_df(
+        df_payment_journal_entry_relations_performed,
+        user_performed(journal_e["payment_creation"]),
+    )
 
     # --- ACCOUNTS ---
     df_account_entities = account_entities.load(
